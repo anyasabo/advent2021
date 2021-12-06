@@ -46,7 +46,7 @@ func day1part2(vals []int) int {
 	return increases
 }
 
-func loadInput(filename string) ([]int, error) {
+func loadInputDay1(filename string) ([]int, error) {
 	var input []int
 	file, err := os.Open(filename)
 	if err != nil {
@@ -67,7 +67,7 @@ func loadInput(filename string) ([]int, error) {
 }
 
 func main() {
-	input, err := loadInput("day1_input.txt")
+	input, err := loadInputDay1("day1_input.txt")
 	if err != nil {
 		fmt.Println(err)
 	} else {
